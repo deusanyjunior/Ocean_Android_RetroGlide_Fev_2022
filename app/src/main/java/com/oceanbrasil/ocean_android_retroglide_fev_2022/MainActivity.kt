@@ -40,5 +40,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intencaoAbrirNovaTela)
         }
 
+        // Terceira Aula
+        val botaoAbrirMapa = findViewById<Button>(R.id.botaoAbrirMapa)
+
+        botaoAbrirMapa.setOnClickListener {
+            val intencaoAbrirMapa = Intent(this, MapsActivity::class.java)
+
+            startActivity(intencaoAbrirMapa)
+        }
+
     }
 }
