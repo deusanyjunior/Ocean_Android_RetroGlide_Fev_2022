@@ -49,5 +49,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intencaoAbrirMapa)
         }
 
+        // Quarta Aula
+        val botaoListarRepositorios = findViewById<Button>(R.id.botaoListarRepositorios)
+
+        botaoListarRepositorios.setOnClickListener {
+            val intencaoListarRepositorios = Intent(this, GithubActivity::class.java)
+
+            startActivity(intencaoListarRepositorios)
+        }
+
     }
 }
